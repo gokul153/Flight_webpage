@@ -56,3 +56,27 @@ function updateCarousel() {
     const itemWidth = carousel.querySelector(".carousel-item").offsetWidth;
     carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
+const contries = "https://countriesnow.space/api/v0.1/countries/codes";
+const arrival = document.getElementById("arrival");
+const departure = document.getElementById("departure");
+
+document.getElementById('ham').addEventListener('click', () => {
+    document.getElementById('nav').classList.toggle('close');
+})
+
+window.onload = () => {
+    fetch(contries)
+        .then(response => response.json()).then((response) => {
+            for (let i = 0; i < response.data.length; i++) {
+                let country = response.data[i].name;
+                var option1 = document.createElement("option");
+                var option2 = document.createElement("option");
+                option1.text = country;
+                option2.text = country;
+                var sel1 = arrival.options[arrival.selectedIndex];
+                arrival.add(option1, sel1);
+                var sel2 = departure.options[departure.selectedIndex];
+                departure.add(option2, sel2);
+            }
+        }).catch(error => console.log(error));
+}

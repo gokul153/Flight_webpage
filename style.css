@@ -7,11 +7,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ccc;
+    
 }
 /* Style header */
 header {
-    background-color: #8885d9;
+    
     color: #1d1d1d;
     text-align: center;
     padding: 5px;
@@ -23,8 +23,8 @@ header {
 }
 /* Style navigation menu */
 nav {
-    background-image: url(backdrop.jpg);
-    color: #0a0909;
+  
+    color: #0c0101;
     padding: 20px;
     height: 40px;
 }
@@ -41,7 +41,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #e91212;
 }
 .carousel-container {
     background-color: #3a9ae3;
@@ -54,7 +54,7 @@ nav ul li a {
 .image_in_it{
     display: flex;
     background-image: url(flight_evening.jpg);
-    height: 500px;
+    height: 100%;
 }
 .carousel {
     background-color: #3a9ae3;
@@ -94,12 +94,80 @@ nav ul li a {
 .form-container {
     
     width: 50%;
-    margin-top: 277px;
+    margin-top: 69px;
     margin-left: 287px;
+    
     padding: 20px;
-    border: 1px solid #0b0a0a;
+    border: 2px solid #0b0a0a;
     border-radius: 5px;
 }
-.nav_bar{
+.container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
 
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 50px; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 10;
+    left: 50%;
+    width: 200px;
+    height: 400px;
 }
