@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <title>Flight booking Ahead</title>
+</head>
+<body>
+    
+    
+    <nav>
+        <ul class = nav_bar>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book Ticket</a></li>
+            <li><a href="#">Airport</a></li>
+            <li><a href="#">Get Offers</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="#">Manage</a></li>
+        </ul>
+    </nav>
+
+   <!-- <img src="flight_evening.jpg"  class="top_image" alt="Full-Width Image">-->
+   <div class=" image_in_it">
+    <div class="form-container">
+        <h2>Booking Form</h2>
+        <form action="" method="POST">
+            <div>
+                <label for="fromDirection">From Direction:</label>
+                
+                <input type="text" id="fromDirection" name="fromDirection" required>
+                <select id="countries_from" name="countries_from" onclick="list_countries()"></select>
+            </div>
+            <div>
+                <label for="toDirection">To Direction:</label>
+                <input type="text" id="toDirection" name="toDirection" required>
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+                <label for="selectOption">Select Option:</label>
+                <select id="selectOption" name="selectOption">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" value="login" onclick="check()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.590452881529!2d-74.00621318461779!3d40.71277502278423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2596f5d68dbcf%3A0x8b5129624b76c68!2sStatue%20of%20Liberty%20National%20Monument!5e0!3m2!1sen!2sus!4v1632123439299!5m2!1sen!2sus" height="200" width="300" title="Iframe Example"></iframe>
+     
+     
+    <br>
+    </body>
+    </html>
+    <script src="script.js"></script>

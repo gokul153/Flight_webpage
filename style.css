@@ -1,0 +1,105 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+/* Style header */
+header {
+    background-color: #8885d9;
+    color: #1d1d1d;
+    text-align: center;
+    padding: 5px;
+}
+.top_image{
+    width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+}
+/* Style navigation menu */
+nav {
+    background-image: url(backdrop.jpg);
+    color: #0a0909;
+    padding: 20px;
+    height: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+.carousel-container {
+    background-color: #3a9ae3;
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 35%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.image_in_it{
+    display: flex;
+    background-image: url(flight_evening.jpg);
+    height: 500px;
+}
+.carousel {
+    background-color: #3a9ae3;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%; /* Adjust the width as needed */
+    height: 30%;
+    flex-shrink: 0;
+    flex-grow: 0;
+  /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(backdrop.jpg); /* Add your item background styles */
+    margin-right: 20px; /* Adjust spacing between items */
+    font-size: 24px; /* Adjust font size */
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #080909; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.next-button {
+    right: 0;
+}
+.form-container {
+    
+    width: 50%;
+    margin-top: 277px;
+    margin-left: 287px;
+    padding: 20px;
+    border: 1px solid #0b0a0a;
+    border-radius: 5px;
+}
+.nav_bar{
+
+}
