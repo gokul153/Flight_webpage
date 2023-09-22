@@ -30,11 +30,27 @@ window.onload = () => {
                 option1.text = country;
                 option2.text = country;
 
-                console.log(option1.text);
+                
                 var sel1 = arrival.options[arrival.selectedIndex];
                 arrival.add(option1, sel1);
                 var sel2 = departure.options[departure.selectedIndex];
                 departure.add(option2, sel2);
             }
         }).catch(error => console.log(error));
+}
+function checkDateValidity() {
+    console.log("check validity started");
+    const dateInput = document.getElementById("dateInput").value;
+    const inputDate = new Date(dateInput);
+    const today = new Date();
+
+    if (isNaN(inputDate.getTime())) {
+        document.getElementById("result").innerText = "Invalid date format.";
+    } else if (inputDate < today) {
+        document.getElementById("result").innerText = "The selected date is a previous date from today.";
+        console.log("old date detected");
+        alert("Enter Proper date");
+    } else {
+        document.getElementById("result").innerText = "The selected date is not a previous date from today.";
+    }
 }
