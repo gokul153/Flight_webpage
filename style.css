@@ -6,7 +6,7 @@ body{
 
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    
     
 }
 /* Style header */
@@ -16,6 +16,9 @@ header {
     text-align: center;
     padding: 5px;
 }
+.heading{
+    color: wheat;
+}
 .top_image{
     width: 100%;
             height: auto; /* Maintain aspect ratio */
@@ -24,13 +27,21 @@ header {
 /* Style navigation menu */
 nav {
   
-    color: #040101;
+ 
+    background-color: #1d1d1d;
+    display: cover;
     padding: 20px;
     height: 40px;
-    background-color: black;
+    
+}
+.nav_display{
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
+ 
+    
     list-style-type: none;
     padding: 0;
 }
@@ -42,7 +53,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #e91212;
+    color: #f06969;
 }
 .carousel-container {
     background-color: #3a9ae3;
@@ -54,53 +65,20 @@ nav ul li a {
 }
 .image_in_it{
     display: flex;
-    background-image: url(backdrop_flight.avif);
+    background-image: url(splash1_new.jpg);
     background-size: cover; /* Adjust the image size to cover the entire body */
     background-repeat: no-repeat;
-    height: 100%;
-}
-.carousel {
-    background-color: #3a9ae3;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+   
 }
 
-.carousel-item {
-    width: 100%; /* Adjust the width as needed */
-    height: 30%;
-    flex-shrink: 0;
-    flex-grow: 0;
-  /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(backdrop.jpg); /* Add your item background styles */
-    margin-right: 20px; /* Adjust spacing between items */
-    font-size: 24px; /* Adjust font size */
-}
-
-.prev-button,
-.next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #080909; /* Button background color */
-    color: #fff; /* Button text color */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.next-button {
-    right: 0;
-}
 
 .form-container {
     background-color: rgba(0, 0, 0, 0.7);
-    
-    width: 50%;
-    margin-top: 286px;
-    margin-left: 182px;
+    float: left;
+    width: 100%;
+    margin-top: 255px;
+    margin-left: 20px;
+    margin-bottom: 40px;
     padding: 20px;
     border: 2px solid #bd1a1a;
     border-radius: 20px;
@@ -155,24 +133,45 @@ select {
     background-color: #0056b3;
 }
 footer {
-    background-color: #333;
+    background-image: url(splash1.jpg);
     color: #fff;
     padding: 20px;
     text-align: center;
+    height: 250px ;
 }
 
-.iframe-container {
-    position: relative;
-    padding-bottom: 50px; /* 16:9 aspect ratio */
-    padding-top: 25px;
-    height: 0;
-    overflow: hidden;
-}
+
 
 .iframe-container iframe {
-    position: absolute;
-    top: 10;
-    left: 50%;
-    width: 200px;
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: left;
+    width: 70%;
+    margin-top: 284px;
+    margin-left: 22px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #bd1a1a;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+.logo{
+    height: 25;
+    width: 25;
+    align-items: start;
+}
+
+.image-container {
+    display: flex;
+    padding-left: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    padding: 20px;
+   
+    border-radius: 10px;
+}
+.image-description {
+    text-align: center;
+    flex: 1;
+    padding: 50px;
 }
