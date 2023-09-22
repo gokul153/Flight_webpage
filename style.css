@@ -24,9 +24,10 @@ header {
 /* Style navigation menu */
 nav {
   
-    color: #0c0101;
+    color: #040101;
     padding: 20px;
     height: 40px;
+    background-color: black;
 }
 
 nav ul {
@@ -53,7 +54,9 @@ nav ul li a {
 }
 .image_in_it{
     display: flex;
-    background-image: url(flight_evening.jpg);
+    background-image: url(backdrop_flight.avif);
+    background-size: cover; /* Adjust the image size to cover the entire body */
+    background-repeat: no-repeat;
     height: 100%;
 }
 .carousel {
@@ -91,15 +94,17 @@ nav ul li a {
 .next-button {
     right: 0;
 }
+
 .form-container {
+    background-color: rgba(0, 0, 0, 0.7);
     
     width: 50%;
-    margin-top: 69px;
-    margin-left: 287px;
-    
+    margin-top: 286px;
+    margin-left: 182px;
     padding: 20px;
-    border: 2px solid #0b0a0a;
-    border-radius: 5px;
+    border: 2px solid #bd1a1a;
+    border-radius: 20px;
+    color: whitesmoke;
 }
 .container {
     background-color: #fff;
