@@ -10,9 +10,7 @@ function check(){
 
 
 const contries = "https://countriesnow.space/api/v0.1/countries/codes";
-const arrival = document.getElementById("arrival");
-const departure = document.getElementById("departure");
-const selectElement = document.getElementById("arrival");
+
 
 
 window.onload = () => {
@@ -39,18 +37,31 @@ window.onload = () => {
         }).catch(error => console.log(error));
 }
 function checkDateValidity() {
+    const arrival = document.getElementById("arrival");
+const departure = document.getElementById("departure");
+const selectElement = document.getElementById("arrival");
     console.log("check validity started");
     const dateInput = document.getElementById("dateInput").value;
     const inputDate = new Date(dateInput);
     const today = new Date();
-
-    if (isNaN(inputDate.getTime())) {
+    const ticketCount = document.getElementById("ticketCount").value;
+    if (!departure || !arrival || !dateInput || !ticketCount) {
+        document.getElementById("result").innerText = "Please fill out all fields.";
+    } 
+    else if (isNaN(inputDate.getTime())) {
         document.getElementById("result").innerText = "Invalid date format.";
     } else if (inputDate < today) {
         document.getElementById("result").innerText = "The selected date is a previous date from today.";
         console.log("old date detected");
         alert("Enter Proper date");
     } else {
-        document.getElementById("result").innerText = "The selected date is not a previous date from today.";
+        console.log("Currect details verified");
+        const details = `
+                    Departure: ${departurePlace}
+                    Arrival: ${arrivalPlace}
+                    Date: ${dateInput}
+                    Ticket Count: ${ticketCount}
+                `;
+                document.getElementById("result").innerText = "Details:\n" + details;
     }
 }
