@@ -27,10 +27,10 @@
  
    <div class=" image_in_it">
   
-    <form>
+    <div>
         <div class="form-container">
             <h2>Flight Booking</h2>
-            <form id="flightForm">
+            <div id="flightForm">
                 <div class="form-group">
                     <label for="departure">From:</label>
                     <!-- <input type="text" id="departure" name="departure" placeholder="Departure location" required> -->
@@ -57,25 +57,25 @@
                     </div>
                 </div>
                 <p id="result"></p>
-                <button type="submit" onclick="checkDateValidity()">Search Flights</button>
+                <button onclick="checkDateValidity()">Search Flights</button>
                 
-            </form>
+            </div>
         
     
        
     </div>
-</form>
+</div>
 </div>
 
     <div class="image-container">
     <div class="image-description">
-        <img src="logo_flight.png" class= logo  width="200" height="200" alt="Image 1">
+        <img src="logo_consitent.png" class= logo  width="200" height="200" alt="Image 1">
         <p>
            Consistent Service that you can relay upon
         </p>
     </div>
     <div class="image-description">
-        <img src="Logo_2.png"width="200" height="200"  alt="Image 2">
+        <img src="logo_black_faster.jpg"width="200" height="200"  alt="Image 2">
         <p>
             Faster And Better As Always
         </p>
@@ -123,6 +123,24 @@
    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+  
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Details</h2>
+      <br>
+      <p>Departure: <span id="departureText"></span></p>
+      <br>
+      <p>Arrival: <span id="arrivalText"></span></p>
+      <br>
+      <p>Date: <span id="dateText"></span></p>
+      <br>
+      <p>Ticket Count: <span id="ticketCountText"></span></p>
+  </div>
+</body>
     </html>
     <script src="script.js"></script>

@@ -57,8 +57,35 @@ window.onload = () => {
             }
         }).catch(error => console.log(error));
 }
-function checkDateValidity() {
+function openPopup(departure, arrival, date, ticketCount) {
     
+   
+
+    var popup = document.getElementById("popup");
+    var departureText = document.getElementById("departureText");
+    var arrivalText = document.getElementById("arrivalText");
+    var dateText = document.getElementById("dateText");
+    var ticketCountText = document.getElementById("ticketCountText");
+
+    // Set the details using the passed parameters
+    departureText.textContent = ` ${departure}`;
+    arrivalText.textContent = ` ${arrival}`;
+    dateText.textContent = ` ${date}`;
+    ticketCountText.textContent = ` ${ticketCount}`;
+
+    // Display the pop-up
+    popup.style.display = "block";
+}
+function closePopup() {
+    // Get the pop-up element
+    var popup = document.getElementById("popup");
+
+    // Close the pop-up
+    popup.style.display = "none";
+}
+
+function checkDateValidity() {
+   
 const selectElement = document.getElementById("arrival");
 const selectElement_departure = document.getElementById("departure");
 const selectedIndex = selectElement.selectedIndex;
@@ -102,17 +129,12 @@ console.log("index is"+selectedIndex);
                     Date: ${dateInput}
                     Ticket Count: ${ticketCount}
                 `;
-                document.getElementById("result").innerText = "Details:\n" + details;
-                alert(details);
-                const confirmationMessage = "Do you want to continue?";
-                const userResponse = confirm(confirmationMessage);
-    
-                // Check the user's response
-                if (userResponse) {
-                    alert("You clicked 'Yes.'"); // Replace this with your desired action for 'Yes.'
-                } else {
-                    alert("You clicked 'No.'"); // Replace this with your desired action for 'No.'
-                }
-                alert
+                openPopup(selectedOptionText_departure,selectedOptionText,dateInput,ticketCount);
+                console.log("opening popup");
+
+              // openPopup();
+               //popup(selectedOptionText_departure, selectedOptionText, dateInput, ticketCount);
+
+               
     }
 }
