@@ -328,7 +328,7 @@ footer {
   font-size: large;
   display: none;
   position: fixed;
-  background-image: url(backdrop_evening.jpg);
+  background-image: url(sally-lR96g3H5VmA-unsplash.jpg);
   padding: 100px;
   width: 300px;
   top: 50%;
@@ -343,4 +343,13 @@ footer {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+#confirm_button{
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
