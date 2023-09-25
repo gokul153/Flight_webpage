@@ -162,15 +162,13 @@ footer {
 }
 
 .image-container {
-    display: flex;
-    padding-left: 200px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #1d1d1d;
-    
-    padding: 20px;
-   
-    border-radius: 10px;
+  display: flex;
+  padding-left: 200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1d1d1d;
+  padding: 0px;
+  border-radius: 0px;
 }
 .image-description {
     text-align: center;
@@ -191,7 +189,7 @@ footer {
   width: 100%;
   background: #1d1d1d;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;

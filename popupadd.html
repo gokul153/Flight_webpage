@@ -1,0 +1,75 @@
+<div class="popup" id="myModal">
+    <div class="popup-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Confirmation Details</h2>
+      <p><strong>Departure Country:</strong> <span id="modal-flying-from"></span></p>
+      <p><strong>Destination Country:</strong> <span id="modal-flying-to"></span></p>
+      <p><strong>Departure Date:</strong> <span id="modal-departure-date"></span></p>
+      <p><strong>Return Date:</strong> <span id="modal-return-date"></span></p>
+      <p><strong>Number of Adults:</strong> <span id="modal-adult-count"></span></p>
+      <p><strong>Number of Children:</strong> <span id="modal-child-count"></span></p>
+      <p><strong>Class Type:</strong> <span id="modal-travel-class"></span></p>
+      <p><strong>Name:</strong> <span id="modal-name"></span></p>
+      <p><strong>Email:</strong> <span id="modal-email"></span></p>
+      <p><strong>Phone:</strong> <span id="modal-mob-number"></span></p>
+      <form>
+      <button id="confirmButton" type="submit">CONFIRM</button>
+     </form>
+    </div>
+  </div>
+  <script>
+function displayModal() {
+const modal = document.getElementById('myModal');
+modal.style.display = 'block';
+
+// Get form input values
+const departureCountry = document.getElementById('flying-from').value;
+const destinationCountry = document.getElementById('flying-to').value;
+const departureDate = document.getElementById('departure-date').value;
+const returnDate = document.getElementById('return-date').value;
+const adultCount = document.getElementById('adult-count').value;
+const childCount = document.getElementById('child-count').value;
+const travelClass = document.getElementById('travel-class').value;
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
+const mobNumber = document.getElementById('mob-number').value;
+
+// Display form input values in the modal
+document.getElementById('modal-flying-from').textContent = departureCountry;
+document.getElementById('modal-flying-to').textContent = destinationCountry;
+document.getElementById('modal-departure-date').textContent = departureDate;
+document.getElementById('modal-return-date').textContent = returnDate;
+document.getElementById('modal-adult-count').textContent = adultCount;
+document.getElementById('modal-child-count').textContent = childCount;
+document.getElementById('modal-travel-class').textContent = travelClass;
+document.getElementById('modal-name').textContent = name;
+document.getElementById('modal-email').textContent = email;
+document.getElementById('modal-mob-number').textContent = mobNumber;
+
+// Close the modal when the "x" button is clicked
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Close the modal when the "Confirm" button is clicked
+const confirmButton = document.getElementById('confirmButton');
+confirmButton.addEventListener('click', () => {
+  modal.style.display = 'none';
+
+  // Perform form submission or other actions here
+  // ...
+});
+}
+
+// Attach an event listener to the form's submit button
+
+const bookFlightButton = document.getElementById('bookFlightButton');
+bookFlightButton.addEventListener('click', () => {
+displayModal();
+});
+const submitButton = document.querySelector('#booking-form button[type="submit"]');
+submitButton.addEventListener('click', (e) => {
+e.preventDefault(); // Prevent the form from submitting
+displayModal(); // Display the modal with form details
+});

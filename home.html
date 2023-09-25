@@ -34,14 +34,14 @@
                 <div class="form-group">
                     <label for="departure">From:</label>
                     <!-- <input type="text" id="departure" name="departure" placeholder="Departure location" required> -->
-                    <select name="" id="arrival">
-                        <option value="">Arrival</option>
+                    <select name="" id="departure">
+                        <option value="">Departure</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="destination">To:</label>
-                    <select name="departurePlace" id="departure" >
-                        <option value="">Departure</option>
+                    <select name="departurePlace" id="arrival" >
+                        <option value="">Arrival</option>
                     </select>
                     <!-- <input type="text" id="destination" name="destination" placeholder="Destination location" required> -->
                 </div>
@@ -49,14 +49,16 @@
                     <label for="date">Date:</label>
                     <input type="date" id="dateInput" name="dateInput" required>
                     <br>
+                    <br>
                     <div class="form-group">
                         <label for="ticketCount">Ticket Count:</label>
                         <br>
                         <input type="number" id="ticketCount" name="ticketCount" min="1" placeholder="Ticket Count" required>
                     </div>
                 </div>
-                <button type="submit" onclick="checkDateValidity()">Search Flights</button>
                 <p id="result"></p>
+                <button type="submit" onclick="checkDateValidity()">Search Flights</button>
+                
             </form>
         
     
