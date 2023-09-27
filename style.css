@@ -80,7 +80,7 @@ nav ul li a {
     margin-left: 20px;
     margin-bottom: 40px;
     padding: 20px;
-    border: 2px solid #bd1a1a;
+    border: 2px solid #c1b2b2;
     border-radius: 20px;
     color: whitesmoke;
 }
@@ -132,10 +132,10 @@ select {
 .btn:hover {
     background-color: #0056b3;
 }
-footer {
+.footer {
    
     color: #0b0a0a;
-    padding: 20px;
+  
     text-align: center;
     height: 250px ;
     width: 100%;
@@ -189,7 +189,7 @@ footer {
   width: 100%;
   background: #1d1d1d;
   min-height: 100px;
-  padding: 10px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,6 +345,15 @@ footer {
   cursor: pointer;
 }
 #confirm_button{
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.check{
   background-color: #0056b3;
   color: white;
   padding: 10px 20px;
