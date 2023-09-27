@@ -17,7 +17,8 @@ header {
     padding: 5px;
 }
 .heading{
-    color: wheat;
+    color: rgb(244, 241, 235);
+    padding: 3px;
 }
 .top_image{
     width: 100%;
@@ -31,7 +32,7 @@ nav {
     background-color: #1d1d1d;
     display: cover;
     padding: 20px;
-    height: 40px;
+    
     
 }
 .nav_display{
@@ -49,6 +50,13 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    
+  color: #fff;
+
+padding: 10px;
+background: ;
+border: none;
+ border-bottom: 2px solid white;
 }
 
 nav ul li a {
@@ -391,8 +399,17 @@ select {
 }
 .topheading{
   position: absolute;
+  z-index: 9;
   color: black;
   top: 50%;
+  font-size: 3rem;
+  right: 50%;
+}
+.topheading2{
+  position: absolute;
+  z-index: 9;
+  color: rgb(26, 24, 196);
+  top: 60%;
   font-size: 3rem;
   right: 50%;
 }
