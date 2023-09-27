@@ -400,7 +400,7 @@ select {
 .topheading{
   position: absolute;
   z-index: 9;
-  color: black;
+  color: rgb(243, 240, 240);
   top: 50%;
   font-size: 3rem;
   right: 50%;
@@ -408,7 +408,7 @@ select {
 .topheading2{
   position: absolute;
   z-index: 9;
-  color: rgb(26, 24, 196);
+  color:wheat;
   top: 60%;
   font-size: 3rem;
   right: 50%;
@@ -426,4 +426,14 @@ select {
 }
 .next-button {
   right: 20px;
+}
+.fas.fa-plane {
+ 
+  color: rgb(23, 23, 24);   /* Change the icon color */
+  position: absolute;
+  z-index: 9;
+  color: rgb(26, 24, 196);
+
+  font-size: 3rem;
+
 }
